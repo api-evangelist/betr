@@ -1,23 +1,109 @@
 aid: betr
-name: betr
-description: 'betr is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: Betr
+description: 'Betr (Betr Holdings, Inc.) is a Miami-based real-money gaming and sports
+  media company founded in 2022 by Joey Levy and Jake Paul on a $50M Series A. Betr
+  operates a consumer "real money gaming super app" spanning Betr Picks (real-money
+  pick''em daily fantasy sports across NFL, NBA, MLB, NHL, UFC and golf), a micro-betting
+  sportsbook launched in Ohio in January 2023, a social sportsbook and social casino,
+  Betr Arcade, and Betr Media (podcasts, creator content and digital sports programming).
+  Betr is a business-to-consumer operator: it publishes mobile apps, a Webflow marketing
+  site, an Intercom-hosted help center and an llms.txt discovery file, but as of this
+  profiling round it publishes no public developer API program, no OpenAPI/AsyncAPI/GraphQL
+  contract, and no SDKs. Its API hosts (api.betr.app, and a staging back-office API
+  documentation host) are private and return 500/403 to anonymous callers.'
+image: https://cdn.prod.website-files.com/62ed9b0abe9f7f955b2c20a8/62f1150838e3e464b61bde40_betr%20OG%20Image.jpg
 url: https://raw.githubusercontent.com/api-evangelist/betr/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-07-31'
 modified: '2026-07-31'
 tags:
 - Company
+- Gaming
+- Sports Betting
+- Daily Fantasy Sports
+- Sports
+- Media
+- Entertainment
+- Mobile Apps
+- Consumer
+- Responsible Gaming
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-31'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1
+x-contract-discovery:
+  date: '2026-07-31'
+  result: no-public-machine-readable-contract
+  note: Betr is a consumer gaming operator with no published developer program. Every
+    contract-discovery probe below was run anonymously on 2026-07-31 and recorded with
+    its HTTP status; none yielded a parseable OpenAPI, Swagger, GraphQL SDL, MCP tools/list
+    or A2A agent card.
+  hosts_probed:
+  - host: api.betr.app
+    note: 'Live private API backend (Symfony). Every path returns HTTP 500 {"message":"There
+      is currently no session available."} or 403; /openapi.json, /openapi.yaml, /swagger.json,
+      /v1/openapi.json, /docs, /redoc, /api-docs all miss. No anonymous contract.'
+  - host: stage1-backoffice-api-docs.betr.app
+    note: Real staging back-office API documentation host (AWS ELB, us-east-1) surfaced
+      by search, but returns HTTP 403 Forbidden on every path including the root, with
+      or without a browser user-agent. Internal/IP-restricted; not a public contract.
+  - host: www.betr.app
+    note: Webflow marketing site. /llms.txt returns HTTP 200 (harvested). All /.well-known/*
+      paths return HTTP 404 "Invalid .well-known request". No spec paths.
+  - host: picks.betr.app
+    note: Betr Picks SPA. Returns HTTP 200 with the same 473-byte HTML shell for EVERY
+      path including /.well-known/agent-card.json and /openapi.json — rejected as an
+      SPA catch-all false positive, not a real artifact.
+  - host: help.betr.app
+    note: Intercom-hosted help center. /llms.txt returns HTTP 200 (harvested). /.well-known/security.txt
+      returns HTTP 200 but is Intercom's own vendor policy (Canonical - app.intercom.com),
+      not a Betr disclosure program.
 common:
 - type: Website
-  url: https://forgeglobal.com/betr_stock/
+  url: https://www.betr.app
+- type: About
+  url: https://www.betr.app/about
+- type: Support
+  url: https://www.betr.app/contact-support
+- type: HelpCenter
+  url: https://help.betr.app/en/
+- type: Contact
+  url: mailto:support@betr.app
+- type: PrivacyPolicy
+  url: https://www.betr.app/terms-and-conditions/betr-privacy-policy
+- type: TermsOfService
+  url: https://www.betr.app/terms-and-conditions/picks
+- type: SignUp
+  url: https://picks.betr.app/
+- type: Careers
+  url: https://jobs.lever.co/betr
+- type: ResponsibleGaming
+  url: https://www.betr.app/responsibility
+- type: Media
+  url: https://www.betr.app/media
+- type: Partners
+  url: https://www.betr.app/betr-partner-application
+- type: Instagram
+  url: https://www.instagram.com/betr/
+- type: Twitter
+  url: https://x.com/betr
+- type: LLMsTxt
+  url: llms/betr-llms.txt
+- type: LLMsTxt
+  name: llms.txt (Help Center)
+  url: llms/betr-help-center-llms.txt
+- type: DomainSecurity
+  url: security/betr-domain-security.yml
+- type: Conformance
+  url: conformance/betr-conformance.yml

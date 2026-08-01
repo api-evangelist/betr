@@ -1,0 +1,88 @@
+generated: '2026-07-31'
+method: searched
+source: https://www.betr.app/ + anonymous probes of every Betr host, 2026-07-31
+scope: |
+  Betr publishes no public developer API program and no machine-readable contract, so
+  the API-side standards below are recorded as not-applicable rather than failing:
+  there is no OpenAPI, AsyncAPI, GraphQL SDL, MCP server or A2A agent card to evaluate.
+  Only the discovery- and posture-level standards that CAN be observed anonymously are
+  graded here.
+standards:
+- id: llmstxt
+  name: llms.txt (AI discovery file)
+  conforms: true
+  evidence: 'https://www.betr.app/llms.txt returns HTTP 200 with a well-formed llms.txt
+    (H1 + blockquote summary + sectioned link lists). A second llms.txt is emitted by
+    the Intercom help center at https://help.betr.app/llms.txt (HTTP 200).'
+- id: rfc9116-security-txt
+  name: RFC 9116 security.txt
+  conforms: false
+  evidence: 'No first-party security.txt on any Betr host. www.betr.app/.well-known/security.txt
+    = 404, api.betr.app = 403. The only 200 (help.betr.app) is Intercom''s vendor policy
+    with Canonical https://app.intercom.com/.well-known/security.txt — not a Betr program.'
+- id: rfc8615-well-known
+  name: RFC 8615 /.well-known/ discovery
+  conforms: false
+  evidence: No first-party /.well-known/ document on any host; www.betr.app returns
+    "Invalid .well-known request" (404) for every path.
+- id: a2a-agent-card
+  name: A2A Agent Card
+  conforms: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json probed on all five
+    hosts — 404 (www, help), 403 (api, staging), and an SPA catch-all HTML 200 on picks.betr.app
+    that was rejected as a false positive.
+- id: openapi
+  name: OpenAPI
+  conforms: false
+  evidence: /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs,
+    /docs and /redoc probed on api.betr.app, www.betr.app, picks.betr.app, help.betr.app
+    and stage1-backoffice-api-docs.betr.app. No path returned a parseable OpenAPI or
+    Swagger document.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: null
+  evidence: Not determinable anonymously — no public contract and no /.well-known/oauth-authorization-server.
+    Betr's consumer apps authenticate against a private backend (api.betr.app returns
+    a Symfony "There is currently no session available." error to anonymous callers).
+- id: oidc
+  name: OpenID Connect
+  conforms: null
+  evidence: /.well-known/openid-configuration returns 404 on www.betr.app and is not
+    served on any other host.
+- id: tls13
+  name: TLS 1.3
+  conforms: true
+  evidence: All five probed hosts negotiate TLSv1.3 (see security/betr-domain-security.yml).
+- id: hsts
+  name: HTTP Strict Transport Security
+  conforms: false
+  evidence: 'Partial only: HSTS is present on picks.betr.app (max-age=63072000) and the
+    vendor-hosted help.betr.app, but absent on www.betr.app and api.betr.app.'
+- id: dnssec
+  name: DNSSEC
+  conforms: true
+  evidence: betr.app is DNSSEC-signed (see security/betr-domain-security.yml).
+- id: dmarc
+  name: DMARC
+  conforms: true
+  evidence: 'DMARC record published with policy p=quarantine (not reject); SPF present;
+    no CAA records.'
+regulatory_posture:
+  note: Betr is a licensed real-money gaming operator, but its public marketing site
+    does not name its regulators or license numbers on the pages probed, so no specific
+    licence is asserted here.
+  observed:
+  - claim: Real-money sports betting live in Ohio
+    evidence: https://www.betr.app/ohio
+  - claim: Real-money gaming offering in Virginia
+    evidence: https://www.betr.app/virginia
+  - claim: Real-money pick'em fantasy sports (Betr Picks) marketed across multiple jurisdictions
+    evidence: https://www.betr.app/picks
+  - claim: Responsible-gaming program with time, deposit, bet/entry and maximum-bet limits,
+      timeout and self-exclusion tools; refers players to the National Council on Problem
+      Gambling helpline (1-800-522-4700)
+    evidence: https://www.betr.app/responsibility
+  not_found:
+  - No trust center, no SOC 2 / ISO 27001 / PCI DSS certification page, and no published
+    compliance program was found on any Betr host — no `Compliance` pointer is emitted.
+  - No vulnerability disclosure policy or bug bounty program of Betr's own was found.

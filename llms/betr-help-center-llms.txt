@@ -1,0 +1,68 @@
+# Betr Help Center
+
+> Help center for Betr
+
+## English
+
+### Account
+
+- [Can I share my account, device, or payment method with someone else?](https://help.betr.app/en/articles/15895109-can-i-share-my-account-device-or-payment-method-with-someone-else.md): Policy covering account, device, and payment method sharing restrictions, and the consequences of violating them.
+
+### Social Casino
+
+- [How do sweepstakes casino games work?](https://help.betr.app/en/articles/13859259-how-do-sweepstakes-casino-games-work.md)
+- [What is the difference between Gold Coins and Sweeps Coins?](https://help.betr.app/en/articles/13859269-what-is-the-difference-between-gold-coins-and-sweeps-coins.md)
+- [Are the games fair?](https://help.betr.app/en/articles/13859272-are-the-games-fair.md)
+- [Do Gold Coins and Sweeps Coins have the same gameplay mechanics?](https://help.betr.app/en/articles/13859286-do-gold-coins-and-sweeps-coins-have-the-same-gameplay-mechanics.md)
+- [Can I switch between Gold Coins and Sweeps Coins?](https://help.betr.app/en/articles/13859291-can-i-switch-between-gold-coins-and-sweeps-coins.md)
+- [Do my odds change depending on how much I play?](https://help.betr.app/en/articles/13859298-do-my-odds-change-depending-on-how-much-i-play.md)
+- [What happens if my game disconnects mid-play?](https://help.betr.app/en/articles/13859315-what-happens-if-my-game-disconnects-mid-play.md)
+- [Why did my balance change without me seeing the result?](https://help.betr.app/en/articles/13859326-why-did-my-balance-change-without-me-seeing-the-result.md)
+- [Do bonus features work differently in Sweeps Coin mode?](https://help.betr.app/en/articles/13859331-do-bonus-features-work-differently-in-sweeps-coin-mode.md)
+- [Do games expire or rotate?](https://help.betr.app/en/articles/13859337-do-games-expire-or-rotate.md)
+- [Are there limits on how much I can play?](https://help.betr.app/en/articles/13859341-are-there-limits-on-how-much-i-can-play.md)
+- [Does playing longer improve my chances of winning?](https://help.betr.app/en/articles/13859344-does-playing-longer-improve-my-chances-of-winning.md)
+- [Where can I view my casino gameplay history?](https://help.betr.app/en/articles/13859347-where-can-i-view-my-casino-gameplay-history.md)
+- [What if my Casino game is still open?](https://help.betr.app/en/articles/13978436-what-if-my-casino-game-is-still-open.md)
+- [What if my casino game is not working?](https://help.betr.app/en/articles/16091164-what-if-my-casino-game-is-not-working.md)
+- [What does RTP mean?](https://help.betr.app/en/articles/16090764-what-does-rtp-mean.md): RTP Percentage
+- [Can I practice on the Casino without using Betr Cash?](https://help.betr.app/en/articles/15993663-can-i-practice-on-the-casino-without-using-betr-cash.md): Practice playing Casino games
+- [What type of Casino games do you have?](https://help.betr.app/en/articles/16091190-what-type-of-casino-games-do-you-have.md)
+- [What is Volatility](https://help.betr.app/en/articles/16091223-what-is-volatility.md)
+
+### Location and Device
+
+- [Why am I having Network connection issues?](https://help.betr.app/en/articles/9461881-why-am-i-having-network-connection-issues.md): Network connection troubleshoot
+- [How do I troubleshoot my Betr app?](https://help.betr.app/en/articles/9461879-how-do-i-troubleshoot-my-betr-app.md): Troubleshooting tips
+- [Can I play if I am not physically in an eligible state?](https://help.betr.app/en/articles/9461971-can-i-play-if-i-am-not-physically-in-an-eligible-state.md): Playing while physically in a different state
+- [What if I suspect my Betr account was hacked?](https://help.betr.app/en/articles/9461903-what-if-i-suspect-my-betr-account-was-hacked.md): Account hacked - next steps
+- [Can I use a Proxy or VPN software?](https://help.betr.app/en/articles/9461884-can-i-use-a-proxy-or-vpn-software.md): VPN/Proxy Prohibited
+- [What is Geolocation?](https://help.betr.app/en/articles/9461877-what-is-geolocation.md): Geolocation information
+- [What do I need to do to be geolocated by the app?](https://help.betr.app/en/articles/9461878-what-do-i-need-to-do-to-be-geolocated-by-the-app.md): How to ensure the app can locate you
+- [What if I am located near a state border?](https://help.betr.app/en/articles/9461882-what-if-i-am-located-near-a-state-border.md): Geolocation near state border
+- [Which states allow Betr Picks?](https://help.betr.app/en/articles/9461963-which-states-allow-betr-picks.md): Betr Picks Eligible States
+- [Why am I getting an error when attempting to place an entry?](https://help.betr.app/en/articles/9461965-why-am-i-getting-an-error-when-attempting-to-place-an-entry.md): Errors when attempting to place an entry
+- [Can I play on the web from a computer?](https://help.betr.app/en/articles/9461969-can-i-play-on-the-web-from-a-computer.md): Desktop support
+- [How do I turn on Wi-Fi and Location Services?](https://help.betr.app/en/articles/9461966-how-do-i-turn-on-wi-fi-and-location-services.md): How to turn on wi-fi and location services
+- [Why can’t I place an entry from a state that allows daily fantasy sports \(DFS\)?](https://help.betr.app/en/articles/9461967-why-can-t-i-place-an-entry-from-a-state-that-allows-daily-fantasy-sports-dfs.md): Daily Fantasy Sports \(DFS\)
+- [Why can't I select any picks?](https://help.betr.app/en/articles/9461960-why-can-t-i-select-any-picks.md): Unable to place an entry
+- [New York Contests Information](https://help.betr.app/en/articles/15901398-new-york-contests-information.md)
+
+### Responsible Gaming
+
+- [Can you please remove the Limits that I have set?](https://help.betr.app/en/articles/9461762-can-you-please-remove-the-limits-that-i-have-set.md): Responsible Gaming limits
+- [Responsible Gaming Resources - Fantasy](https://help.betr.app/en/articles/9461889-responsible-gaming-resources-fantasy.md): Responsible Gaming information
+- [What is a reality check?](https://help.betr.app/en/articles/9461769-what-is-a-reality-check.md): Reality Check
+- [I have been released from Timeout, what do I do now?](https://help.betr.app/en/articles/9461768-i-have-been-released-from-timeout-what-do-i-do-now.md): Timeout ended, what next?
+- [What is a Timeout?](https://help.betr.app/en/articles/9461767-what-is-a-timeout.md): Information on Timeouts and how to set one up
+- [How do I Self-exclude from my account?](https://help.betr.app/en/articles/9461764-how-do-i-self-exclude-from-my-account.md): How to self exclude
+- [What is Self-exclusion?](https://help.betr.app/en/articles/9461763-what-is-self-exclusion.md): Self-exclusion information
+- [What are Betr's deposit limits, and how do I change them?](https://help.betr.app/en/articles/9461759-what-are-betr-s-deposit-limits-and-how-do-i-change-them.md): Deposit/Purchase limits
+- [Can I set a limit for the amount that I play during a certain period of time?](https://help.betr.app/en/articles/9461760-can-i-set-a-limit-for-the-amount-that-i-play-during-a-certain-period-of-time.md): How to set play limit
+- [What if I have a balance in my account when I self-exclude?](https://help.betr.app/en/articles/9461893-what-if-i-have-a-balance-in-my-account-when-i-self-exclude.md): Self-excluded with a balance
+- [What measures are in place to promote Responsible Gaming?](https://help.betr.app/en/articles/9461890-what-measures-are-in-place-to-promote-responsible-gaming.md): Betr's responsible gaming measures
+- [What Responsible Gaming precautions does Betr Picks offer?](https://help.betr.app/en/articles/9461894-what-responsible-gaming-precautions-does-betr-picks-offer.md): Betr Picks Responsible Gaming precautions
+
+### Legal
+
+- [Betr Privacy Policy](https://help.betr.app/en/articles/9462118-betr-privacy-policy.md)

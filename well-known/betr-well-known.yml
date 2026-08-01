@@ -1,0 +1,111 @@
+generated: '2026-07-31'
+method: probed
+source: anonymous HTTP probes of every Betr host, 2026-07-31
+summary:
+  hosts_probed: 5
+  documents_found: 1
+  first_party_documents_found: 0
+  note: Betr publishes no first-party /.well-known/ discovery surface. The only 200
+    on any /.well-known/ path across all five hosts is Intercom's own vendor security.txt
+    served from the Intercom-hosted help center, whose Canonical field points at app.intercom.com
+    — it is not a Betr disclosure program and is deliberately NOT wired as a SecurityTxt
+    or Security pointer for Betr.
+hosts:
+- host: www.betr.app
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  note: All /.well-known/* paths return HTTP 404 with the body "Invalid .well-known
+    request" (Webflow default handler).
+- host: api.betr.app
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+  note: Private API backend; /.well-known/* is blocked at the edge with HTTP 403.
+- host: help.betr.app
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: betr-help-center-intercom-security.txt
+    first_party: false
+    vendor: Intercom
+    canonical: https://app.intercom.com/.well-known/security.txt
+    contact:
+    - https://bugcrowd.com/intercom
+    - mailto:security@intercom.com
+    policy: https://www.bugcrowd.com/resource/standard-disclosure-terms/
+    expires: '2029-03-15T00:00:00Z'
+    note: Intercom's vendor policy served on Betr's help-center subdomain. Saved for
+      the record; NOT attributed to Betr.
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: picks.betr.app
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    accepted: false
+  - path: /.well-known/agent-card.json
+    status: 200
+    accepted: false
+  - path: /.well-known/agent.json
+    status: 200
+    accepted: false
+  - path: /.well-known/openid-configuration
+    status: 200
+    accepted: false
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    accepted: false
+  - path: /.well-known/api-catalog
+    status: 200
+    accepted: false
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    accepted: false
+  note: SPA catch-all. Every path — including nonexistent ones — returns HTTP 200 with
+    the identical 473-byte HTML shell (content-type text/html). All 200s rejected as
+    false positives per the pipeline's SPA catch-all rule; nothing saved.
+- host: stage1-backoffice-api-docs.betr.app
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403
+  note: Staging back-office API documentation host; HTTP 403 Forbidden on every path
+    including the root, with and without a browser user-agent.
+other_discovery:
+- path: /robots.txt
+  host: www.betr.app
+  status: 200
+- path: /sitemap.xml
+  host: www.betr.app
+  status: 200
+  entries: 40
+- path: /llms.txt
+  host: www.betr.app
+  status: 200
+  file: ../llms/betr-llms.txt
+- path: /llms.txt
+  host: help.betr.app
+  status: 200
+  file: ../llms/betr-help-center-llms.txt

@@ -1,0 +1,45 @@
+# Betr
+
+> Betr is a sports gaming and media company focusing on micro-betting, real-money fantasy sports (Betr Picks), social sportsbook, and digital media content.
+
+## Core Pages
+
+- [Home](https://www.betr.app): Betr official home page, featuring app download links, platform overview, and current features.
+- [About Us](https://www.betr.app/about): Company background, mission, leadership, and overview of the Betr ecosystem.
+- [Media](https://www.betr.app/media): Betr Media content, podcasts, talent, and digital sports media output.
+- [Betr Promo Code & Where to Play](https://www.betr.app/betr-promo-code-and-where-to-play): Comprehensive guide on active promo codes, eligible states, and platform availability.
+
+## Products & Regional Guides
+
+- [Betr Picks](https://www.betr.app/picks): Real-money pick'em fantasy sports platform features and rules.
+- [Ohio Sportsbook & Gaming](https://www.betr.app/ohio): State-specific offering and operational overview for Ohio.
+- [Virginia Gaming Guide](https://www.betr.app/virginia): State-specific offering and operational overview for Virginia.
+
+## Responsible Gaming & Customer Support
+
+- [Responsible Gaming](https://www.betr.app/responsibility): Betr's commitment to responsible gaming, self-exclusion tools, player safety, and crisis hotline info.
+- [Contact Support](https://www.betr.app/contact-support): Customer support portal, help desk access, and inquiry handling.
+- [No House Advantage FAQs](https://www.betr.app/no-house-advantage-faqs): Frequently asked questions regarding NHA account migration, balances, and platform updates.
+
+## Partner & Affiliate Programs
+
+- [Betr Partner Application](https://www.betr.app/betr-partner-application): Application page for creators, affiliates, and prospective marketing partners.
+- [Betr Friends](https://www.betr.app/betr-friends): Referral and community partnership details.
+
+## Terms, Rules & Privacy
+
+- [Privacy Policy](https://www.betr.app/terms-and-conditions/betr-privacy-policy): Privacy policies and data handling practices.
+- [Betr Picks Terms](https://www.betr.app/terms-and-conditions/picks): Terms of service for Betr Picks operations.
+- [Social Sportsbook & Casino Terms](https://www.betr.app/terms-and-conditions/social-sportsbook-and-casino): Operating terms and conditions for social sportsbook and casino games.
+- [Sweepstakes Official Rules](https://www.betr.app/terms-and-conditions/sweepstakes-official-rules): Official contest and sweepstakes legal terms.
+- [Arcade Terms](https://www.betr.app/terms-and-conditions/arcade): Operational terms and conditions for Arcade features.
+
+## Optional / Marketing Landing Pages
+
+> Note: The following URLs are specific affiliate, partner, or channel tracking landing pages.
+
+- [Picks - Stokastic](https://www.betr.app/picks-stokastic)
+- [Picks - RotoGrinders](https://www.betr.app/picks-roto)
+- [Picks - Betsperts](https://www.betr.app/picks-betsperts)
+- [Picks - Pass Offer](https://www.betr.app/picks-passes)
+- [Picks - Wise](https://www.betr.app/picks-wise)

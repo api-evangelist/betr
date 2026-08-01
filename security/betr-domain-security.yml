@@ -1,0 +1,48 @@
+generated: '2026-07-31'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + contract-discovery hosts
+hosts:
+- host: www.betr.app
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 24 20:11:06 2026 GMT
+  hsts: false
+- host: api.betr.app
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 29 00:18:12 2026 GMT
+  hsts: false
+  note: Private API backend; anonymous requests return HTTP 500 or 403.
+- host: picks.betr.app
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  1 17:41:35 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+- host: help.betr.app
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 19 06:35:46 2026 GMT
+  hsts: true
+  hsts_max_age: 15552000
+  hsts_include_subdomains: true
+  hsts_preload: true
+  note: Intercom-hosted help center; the HSTS posture is the vendor's, not a Betr origin.
+- host: stage1-backoffice-api-docs.betr.app
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan 17 23:59:59 2027 GMT
+  hsts: false
+  note: Staging back-office API docs host (AWS ELB, us-east-1); HTTP 403 on every path.
+domains:
+- domain: betr.app
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+findings:
+- No CAA records are published on betr.app.
+- No HSTS on the primary marketing host (www.betr.app) or on the API host (api.betr.app);
+  HSTS is present only on picks.betr.app and the vendor-hosted help center.
+- DNSSEC is enabled on betr.app; the DMARC policy is quarantine, not reject.
