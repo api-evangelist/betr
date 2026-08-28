@@ -11,6 +11,17 @@ description: 'Betr (Betr Holdings, Inc.) is a Miami-based real-money gaming and 
   profiling round it publishes no public developer API program, no OpenAPI/AsyncAPI/GraphQL
   contract, and no SDKs. Its API hosts (api.betr.app, and a staging back-office API
   documentation host) are private and return 500/403 to anonymous callers.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/62ed9b0abe9f7f955b2c20a8/62f1150838e3e464b61bde40_betr%20OG%20Image.jpg
 url: https://raw.githubusercontent.com/api-evangelist/betr/refs/heads/main/apis.yml
 x-type: company
