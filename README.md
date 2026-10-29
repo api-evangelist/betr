@@ -64,39 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Betr (Betr Holdings, Inc.) is a Miami-based real-money gaming and sports media company founded in 2022 by Joey Levy and Jake Paul on a $50M Series A. It operates a consumer "real money gaming super app" spanning **Betr Picks** (real-money pick'em daily fantasy sports), a **micro-betting sportsbook** (launched in Ohio in January 2023), a **social sportsbook** and **social casino**, **Betr Arcade**, and **Betr Media**.
+Betr (Betr Holdings, Inc.) is a Miami-based real-money gaming and sports media company founded in 2022 by Joey Levy and Jake Paul on a $50M Series A. Betr operates a consumer "real money gaming super app" spanning Betr Picks (real-money pick'em daily fantasy sports across NFL, NBA, MLB, NHL, UFC and golf), a micro-betting sportsbook launched in Ohio in January 2023, a social sportsbook and social casino, Betr Arcade, and Betr Media (podcasts, creator content and digital sports programming). Betr is a business-to-consumer operator: it publishes mobile apps, a Webflow marketing site, an Intercom-hosted help center and an llms.txt discovery file, but as of this profiling round it publishes no public developer API program, no OpenAPI/AsyncAPI/GraphQL contract, and no SDKs. Its API hosts (api.betr.app, and a staging back-office API documentation host) are private and return 500/403 to anonymous callers.
 
-- Website: https://www.betr.app
-- Help center: https://help.betr.app/en/
-- Secondary-market listing (harvest source): https://forgeglobal.com/betr_stock/
+**Areas:** Company · Gaming · Sports Betting · Daily Fantasy Sports · Sports · Media · Entertainment · Mobile App · Consumer · Responsible Gaming
 
-## API posture
+## Betr on APIs.io
 
-**Betr is business-to-consumer and publishes no public developer API program.** The 2026-07-31
-enrichment pass ran full contract discovery against every Betr host and found no OpenAPI, Swagger,
-AsyncAPI, GraphQL SDL, MCP server or A2A agent card. Every probe and its HTTP status is recorded in
-`apis.yml` under `x-contract-discovery` and in `well-known/betr-well-known.yml`.
+Everything profiled for Betr is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/betr/](https://apis.io/providers/betr/)** — or go straight to one of the APIs or properties below.
 
-| Host | Result |
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Betr Domain Security](https://apis.io/security/betr/betr-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.betr.app)
+- [Sign up](https://picks.betr.app/)
+- [Support](https://www.betr.app/contact-support)
+- [Terms of service](https://www.betr.app/terms-and-conditions/picks)
+- [Privacy policy](https://www.betr.app/terms-and-conditions/betr-privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 13.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| `api.betr.app` | Live private backend (Symfony). Anonymous requests return HTTP 500 / 403. No contract. |
-| `stage1-backoffice-api-docs.betr.app` | Real staging back-office API docs host, HTTP 403 on every path (internal). |
-| `www.betr.app` | Webflow site. `/llms.txt` = 200 (harvested). All `/.well-known/*` = 404. |
-| `picks.betr.app` | SPA catch-all — HTTP 200 HTML for every path; all 200s rejected as false positives. |
-| `help.betr.app` | Intercom help center. `/llms.txt` = 200 (harvested). `security.txt` = 200 but is **Intercom's** vendor policy. |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
 
-## Artifacts
+**Agent readiness 2.9** — human-only
 
-| Path | Type | Method |
-|---|---|---|
-| `llms/betr-llms.txt` | LLMsTxt | searched — verbatim from https://www.betr.app/llms.txt |
-| `llms/betr-help-center-llms.txt` | LLMsTxt | searched — verbatim from https://help.betr.app/llms.txt |
-| `well-known/betr-well-known.yml` | (no pointer) | probed — records that Betr publishes **no** first-party `/.well-known/` document |
-| `well-known/betr-help-center-intercom-security.txt` | (no pointer) | probed — Intercom's vendor `security.txt`, saved for the record, **not** attributed to Betr |
-| `security/betr-domain-security.yml` | DomainSecurity | probed — TLS/HSTS per host, DNSSEC/CAA/SPF/DMARC for `betr.app` |
-| `conformance/betr-conformance.yml` | Conformance | searched — observable standards posture + regulatory/responsible-gaming surface |
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-No `SecurityTxt`, `Security`, `WellKnown` or `Compliance` pointer is emitted: the only `security.txt`
-found belongs to Intercom (`Canonical: app.intercom.com`), no first-party `/.well-known/` document
-exists, and Betr publishes no trust center or certification page. Recording those would credit Betr
-with a posture it does not have.
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/betr/](https://apis.io/providers/betr/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Betr: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/betr/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
